@@ -40,3 +40,4 @@ jobs:
           push: true
           target: prod
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+          platform: linux/amd64,linux/arm64/v8
